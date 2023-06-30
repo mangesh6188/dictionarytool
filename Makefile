@@ -7,3 +7,11 @@ lint:
 run: requirements.txt
 	python3 dictionarytool/main.py $(word) $(api_key)
 
+build: setup.py
+	python3 setup.py build bdist_wheel
+
+clean:
+	rm -rf build
+	rm -rf dist
+	rm -rf dict_tool.egg-info
+
