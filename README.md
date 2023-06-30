@@ -82,8 +82,6 @@ $ docker run --rm dictionary-tool word api_key
 
 ```
 
-Addon - We can use Github actions and create a workflow which will build the image and push it to ecr/docker
-
 
 ### All Make Commands
 
@@ -98,3 +96,12 @@ Addon - We can use Github actions and create a workflow which will build the ima
 `clean` : to clean older build and dist package folder
 
 You can use the commands by running `make <command>`.
+
+
+## Scope of Improvement  / Extra points
+
+- We can use Github actions and create a workflow which will build the image and push it to ecr/docker
+- API key can be read from the env var, instead of reading it as an argument 
+- Use pipfile/poetry to handle the dependencies 
+- Make executable so that it can be run by anyone without the need of cloning the repo and installing dependencies and all
+- Add integration tests
