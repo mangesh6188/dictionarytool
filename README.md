@@ -45,16 +45,41 @@ INFO: Defination of exercise : ˈek-sər-ˌsīz (noun): the act of bringing into
 The tool will print the definition of the word if found in the dictionary.
 ```
 
-### Make Commands
+### Tests
+```
+Code Checker Pylint Test
+
+$ make lint 
+```
+
+```
+Unittest (Mock test) - to lookup if getting expected defination for a valid word or check if its invalid word"
+
+$ make test
+```
+
+### Build the package
+
+```
+setuptools being used to build the dist locally
+Ref - https://setuptools.pypa.io/en/latest/setuptools.html
+
+$ make build
+
+To clean old builds
+$ make clean
+```
+
+### All Make Commands
 
 `install`: Installs the required dependencies specified in `requirements.txt`.
+
+`test`: Runs the pytest framework to execute the tests.
 
 `lint`: Runs pylint to check the code for any potential issues.
 
 `build` : Builds a package to distribute
-Ref - https://setuptools.pypa.io/en/latest/setuptools.html
 
 `clean` : to clean older build and dist package folder
-
 
 You can use the commands by running `make <command>`.
