@@ -1,8 +1,17 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
+# pylint: disable=invalid-name
+# pylint: disable=trailing-newlines
+# pylint: disable=trailing-whitespace
+# pylint: disable=missing-final-newline
+
 import unittest
 from unittest.mock import patch
 from io import StringIO
 import dictionary_tool
 
+api_key = 'YOUR_MOCK_API_KEY'
 
 class TestDictionaryTool(unittest.TestCase):
     @patch('sys.stdout', new_callable=StringIO)

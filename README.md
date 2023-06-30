@@ -68,7 +68,22 @@ $ make build
 
 To clean old builds
 $ make clean
+
+Dockerize the package - 
+
+If you which run it through container then you can build the App below
+
+$ docker build --tag dictionarytool .
+
+
+Run it locally 
+
+$ docker run --rm dictionary-tool word api_key
+
 ```
+
+Addon - We can use Github actions and create a workflow which will build the image and push it to ecr/docker
+
 
 ### All Make Commands
 
